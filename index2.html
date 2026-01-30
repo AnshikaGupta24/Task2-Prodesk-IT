@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salary Expense Dashboard</title>
+  <link rel="stylesheet" href="style2.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+   <h1>Salary Dashboard</h1>
+  <div class="dashboard">
+    
+
+    <div class="card">
+      <h2>Total Salary</h2>
+      <input id="one" type="number" placeholder="Enter your salary" />
+    </div>
+    <div class="card2">
+      <h2>Add Expense</h2>
+      <input  id= "two" type="text" placeholder="Write your Expense name" />
+      <input id="three" type="number" placeholder="Enter Expense amount" />
+      <button id="btn">Add Expense</button>
+    </div>
+
+    <div class="summary">
+        <div class="salary">
+            <h2>Salary</h2>
+            <p>0 Rs.</p>
+        </div><br>
+        <div class="expenses">
+            <h2>Total Expenses</h2>
+            <p>0 Rs.</p>
+        </div><br>
+        <div class="balance">
+            <h2>Balance</h2>
+            <p>0 Rs.</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+      <h2>Expense List</h2>
+      <ul class="expense-list">
+        <li>
+          <span></span>
+          <span></span>
+          <button class="delete-btn">🗑️</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="chart-container">
+    <canvas id="Chart"></canvas>
+  </div>
+<script src="app2.js"></script>
+</body>
+</html>
